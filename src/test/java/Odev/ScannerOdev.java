@@ -1,7 +1,5 @@
 package Odev;
-
 import java.util.Scanner;
-
 public class ScannerOdev {
     public static void main(String[] args) {
         int math, fizik, kimya, turkce,tarih, muzik;
@@ -11,7 +9,7 @@ public class ScannerOdev {
         math=inp.nextInt();
 
         System.out.println("Lütfen Fizik notunuzu giriniz");
-       fizik=inp.nextInt();
+        fizik=inp.nextInt();
 
         System.out.println("Lütfen Kimya notunuzu giriniz");
         kimya=inp.nextInt();
