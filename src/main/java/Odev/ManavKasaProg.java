@@ -17,7 +17,6 @@ public class ManavKasaProg {
            Patlıcan : 25,00 TL
 
          */
-
         double a ,armutKg =20.14,e ,elmaKg=23.67,d, domatesKg=21.11,m, muzKg=30.95,p, patKg=25.00;
         Scanner scan= new Scanner(System.in);
         System.out.println("Kaç kilo armut aldınız?");
@@ -39,16 +38,6 @@ public class ManavKasaProg {
 
         double toplam  = (a * armutKg) + (e * elmaKg) + (d * domatesKg) + (m * muzKg) + (p * patKg);
         System.out.println("Toplam tutar  :" + toplam);
-
-
-
-
-
-
-
-
-
-
     }
 
 }
