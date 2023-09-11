@@ -1,5 +1,4 @@
 package Odev;
-
 import java.util.Scanner;
 
 public class BurcBulanProgram {
@@ -23,18 +22,16 @@ public class BurcBulanProgram {
                 continue; // Hata durumunda döngüyü tekrar başlat
             }
 
-
-
             System.out.print("Doğum tarihinizin ayını giriniz (örneğin, Ocak için 'Ocak' veya '1' giriniz): ");
-             // Küçük harfe çevir
+            // Küçük harfe çevir
             String ayStr = scanner.next().toLowerCase();
             ay = ayStrToSayi(ayStr);
 
-            if (ay==-1) {
-                System.out.println("Hatalı giriş yaptınız. Ay geçerli bir değer olmalıdır.");
-                System.out.println();
-                 continue;
-            }else if ( ay < 1 || ay > 12 ) {
+            if (ay == -1) {
+                System.out.println("Hatalı giriş yaptınız. Ay geçerli bir değer olmalıdır.Lütfen Doğum tarihinizin ayını giriniz (örneğin, Ocak için 'Ocak' veya '1' giriniz)");
+                scanner.next();
+                continue;
+            } else if (ay < 1 || ay > 12) {
                 System.out.println("Hatalı giriş yaptınız. Ay geçerli bir değer olmalıdır.");
                 scanner.next();
                 continue;
@@ -50,45 +47,32 @@ public class BurcBulanProgram {
     }
 
     public static int ayStrToSayi(String ayStr) {
-        switch (ayStr) {
-            case "ocak":
-            case "1":
-                return 1;
-            case "şubat":
-            case "2":
-                return 2;
-            case "mart":
-            case "3":
-                return 3;
-            case "nisan":
-            case "4":
-                return 4;
-            case "mayıs":
-            case "5":
-                return 5;
-            case "haziran":
-            case "6":
-                return 6;
-            case "temmuz":
-            case "7":
-                return 7;
-            case "ağustos":
-            case "8":
-                return 8;
-            case "eylül":
-            case "9":
-                return 9;
-            case "ekim":
-            case "10":
-                return 10;
-            case "kasım":
-            case "11":
-                return 11;
-            case "aralık":
-            case "12":
-                return 12;
-            default:
-                return -1;
+        if (ayStr.equals("ocak") || ayStr.equals("1")) {
+            return 1;
+        } else if (ayStr.equals("şubat") || ayStr.equals("2")) {
+            return 2;
+        } else if (ayStr.equals("mart") || ayStr.equals("3")) {
+            return 3;
+        } else if (ayStr.equals("nisan") || ayStr.equals("4")) {
+            return 4;
+        } else if (ayStr.equals("mayıs") || ayStr.equals("5")) {
+            return 5;
+        } else if (ayStr.equals("haziran") || ayStr.equals("6")) {
+            return 6;
+        } else if (ayStr.equals("temmuz") || ayStr.equals("7")) {
+            return 7;
+        } else if (ayStr.equals("ağustos") || ayStr.equals("8")) {
+            return 8;
+        } else if (ayStr.equals("eylül") || ayStr.equals("9")) {
+            return 9;
+        } else if (ayStr.equals("ekim") || ayStr.equals("10")) {
+            return 10;
+        } else if (ayStr.equals("kasım") || ayStr.equals("11")) {
+            return 11;
+        } else if (ayStr.equals("aralık") || ayStr.equals("12")) {
+            return 12;
+        } else {
+            return -1;
         }
     }
 
@@ -119,5 +103,4 @@ public class BurcBulanProgram {
             return "Balık Burcu";
         }
     }
-
 }
