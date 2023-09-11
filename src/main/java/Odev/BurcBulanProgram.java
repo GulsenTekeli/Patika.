@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class BurcBulanProgram {
     public static void main(String[] args) {
+        // switch-case kullanmadan yapınız.
         Scanner scanner = new Scanner(System.in);
 
         int gun = 0;
